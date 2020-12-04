@@ -59,7 +59,7 @@ resource "aws_instance" "final" {
 		    EOF
 
 	tags = {
-		Name = "Phoenix Fabio"
+		Name = "instancia_fabio"
 	}
 	vpc_security_group_ids = [aws_security_group.securitygroup.id]
 }

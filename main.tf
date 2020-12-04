@@ -6,15 +6,6 @@ provider "aws" {
 	secret_key = var.my_secret_key
 }
 
-resource "aws_instance" "InstallEC2" {
-	ami = var.my_ami
-	instance_type = var.my_instance_type
-
-  tags = {
-    Name = "EC2 Fabio"
-  }
-}
-
 resource "aws_instance" "final" {
 	ami = var.my_ami
 	instance_type = var.my_instance_type
